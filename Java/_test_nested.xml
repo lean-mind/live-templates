@@ -1,0 +1,13 @@
+<template name="_test_nested" value="@org.junit.jupiter.api.Nested&#10;@org.junit.jupiter.api.DisplayName(&quot;$TEST_NAME$&quot;)&#10;class $METHOD_NAME$ {&#10;&#10;    @org.junit.jupiter.api.Test&#10;    @org.junit.jupiter.api.DisplayName(&quot;$SUBTEST_NAME$&quot;)&#10;    public void $SUBTEST_NAME_METHOD$ () {&#10;        //GIVEN&#10;&#10;        //WHEN&#10;&#10;        //THEN&#10;        org.assertj.core.api.Assertions.assertThat($ASSERT$).isEqualTo($RESULT_EQUAL$);&#10;    }&#10;}" description="Group your test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TEST_NAME" expression="" defaultValue="&quot;TODO: Rename this&quot;" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="camelCase(TEST_NAME)" defaultValue="&quot;methodName&quot;" alwaysStopAt="true" />
+    <variable name="SUBTEST_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUBTEST_NAME_METHOD" expression="snakeCase(SUBTEST_NAME)" defaultValue="&quot;subtest&quot;" alwaysStopAt="true" />
+    <variable name="ASSERT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESULT_EQUAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="JAVA_CODE" value="true" />
+        <option name="JAVA_COMMENT" value="false" />
+        <option name="JAVA_ELSE_PLACE" value="false" />
+    </context>
+</template>

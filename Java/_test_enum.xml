@@ -1,0 +1,9 @@
+<template name="_test_enum" value="private final String VALUE_1 = &quot;VALUE_1&quot;;&#10;private final String VALUE_2 = &quot;VALUE_2&quot;;&#10;private final String INVALID_$CLASS_NAME_UPPER_SNAKE$  = &quot;INVALID_$CLASS_NAME_UPPER_SNAKE$&quot;;&#10;&#10;@Test$END$&#10;void only_be_created_with_a_valid_$CLASS_NAME_LOWER_SNAKE$() {&#10;    org.junit.jupiter.api.Assertions.assertNotNull($OBJECT_NAME$.from(VALUE_1));&#10;    org.junit.jupiter.api.Assertions.assertNotNull($OBJECT_NAME$.from(VALUE_2));&#10;}&#10;&#10;@Disabled&#10;@Test&#10;void fail_when_$CLASS_NAME_LOWER_SNAKE$_is_invalid() {&#10;    org.junit.jupiter.api.Assertions.assertThrows(Invalid$OBJECT_NAME$.class, () -&gt; $OBJECT_NAME$.from(INVALID_$CLASS_NAME_UPPER_SNAKE$));&#10;}" description="Add a battery of default test for enum with JUnit5 and Assertj" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME_UPPER_SNAKE" expression="regularExpression(capitalizeAndUnderscore(className()), &quot;_SHOULD&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS_NAME_LOWER_SNAKE" expression="regularExpression(snakeCase(className()), &quot;_should&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJECT_NAME" expression="regularExpression(className(), &quot;Should&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="JAVA_CODE" value="true" />
+        <option name="JAVA_COMMENT" value="false" />
+    </context>
+</template>

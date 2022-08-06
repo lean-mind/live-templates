@@ -1,0 +1,7 @@
+<template name="_test_value_object" value="@org.junit.jupiter.api.Test&#10;@org.junit.jupiter.api.DisplayName(&quot;Generate a $CLASSNAME$&quot;)&#10;void generate_a_$CLASSNAME$() {&#10;    &#10;    org.assertj.core.api.Assertions.fail(&quot;Not yet implemented&quot;);$END$&#10;}&#10;&#10;@org.junit.jupiter.api.Disabled&#10;@org.junit.jupiter.api.Test&#10;@org.junit.jupiter.api.DisplayName(&quot;Not allow empty values&quot;)&#10;void not_allow_empty_values() {&#10;&#10;    org.junit.jupiter.api.Assertions.assertThrows(RuntimeException.class, () -&gt; {&#10;        // TODO add method&#10;    });&#10;}&#10;&#10;@org.junit.jupiter.api.Disabled&#10;@org.junit.jupiter.api.Test&#10;@org.junit.jupiter.api.DisplayName(&quot;Not allow null values&quot;)&#10;void not_allow_null_values() {&#10;&#10;    org.junit.jupiter.api.Assertions.assertThrows(RuntimeException.class, () -&gt; {&#10;        // TODO add method&#10;    });&#10;}" description="Add a battery of default test for value objects with JUnit5 and Assertj" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="CLASSNAME" expression="regularExpression(snakeCase(className()), &quot;_should&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="JAVA_CODE" value="true" />
+        <option name="JAVA_COMMENT" value="false" />
+    </context>
+</template>

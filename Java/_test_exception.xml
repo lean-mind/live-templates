@@ -1,0 +1,7 @@
+<template name="_test_exception" value="@org.junit.jupiter.api.Test&#10;@org.junit.jupiter.api.DisplayName(&quot;$TEST_NAME$&quot;)&#10;public void $TEST_NAME_METHOD$ () {&#10;    org.junit.jupiter.api.Assertions.assertThrows(NumberFormatException.class, () -&gt; {&#10;        org.assertj.core.api.Assertions.fail(&quot;Not yet implemented&quot;);$END$&#10;    });&#10;}" description="Add new Java test to assert will subject under test throw a exception" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TEST_NAME" expression="" defaultValue="&quot;TODO: Rename this&quot;" alwaysStopAt="true" />
+    <variable name="TEST_NAME_METHOD" expression="snakeCase(TEST_NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="JAVA_CODE" value="true" />
+    </context>
+</template>

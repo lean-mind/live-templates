@@ -1,0 +1,8 @@
+<template name="selc_having" value="SELECT 1,$END$$field$, count($field$)&#10;FROM $table$ &#10;GROUP BY $field$&#10;HAVING count($field$) &gt; $number$;&#10;" description="select the field having more than &quot;n&quot; counts" toReformat="false" toShortenFQNames="true">
+    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="field" expression="dbColumns()" defaultValue="" alwaysStopAt="true" />
+    <variable name="number" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <context>
+        <option name="SQL_STATEMENT" value="true" />
+    </context>
+</template>

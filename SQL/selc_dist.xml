@@ -1,0 +1,7 @@
+<template name="selc_dist" value="SELECT DISTINCT 1,$END$$field$, count($field$)&#10;FROM $table$ &#10;GROUP BY $field$;" description="select the counts by groups" toReformat="false" toShortenFQNames="true">
+    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="field" expression="dbObjectName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="SQL_STATEMENT" value="true" />
+    </context>
+</template>

@@ -1,0 +1,7 @@
+<template name="selw" value="SELECT * &#10;FROM $table$ &#10;WHERE 1=1 &#10;    AND $field$ = $END$&#10;;" description="select specific rows from a table" toReformat="false" toShortenFQNames="false">
+    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="field" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="SQL_STATEMENT_MSSQL" value="false" />
+    </context>
+</template>
